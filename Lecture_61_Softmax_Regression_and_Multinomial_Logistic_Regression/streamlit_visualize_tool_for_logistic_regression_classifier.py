@@ -1,3 +1,27 @@
+'''
+This Python file is a **Streamlit-based interactive visualization tool for Logistic Regression classifiers**. 
+
+It allows users to experiment with logistic regression on synthetic datasets and visually explore how different hyperparameters affect the model's decision boundaries and accuracy.
+
+**Key Features:**
+
+- **Dataset Selection:** Users can choose between a binary or multiclass synthetic dataset, which is generated and plotted automatically.
+
+- **Hyperparameter Controls:** The sidebar provides interactive controls for regularization type (`penalty`), regularization strength (`C`), solver, maximum iterations, multi-class strategy, and `l1_ratio` (for elasticnet).
+
+- **Visualization:** The tool displays the dataset and, after running the algorithm, overlays the decision boundary learned by the logistic regression model.
+
+- **Model Training and Evaluation:** When the "Run Algorithm" button is clicked, the model is trained on the selected dataset and parameters. The tool then shows the updated plot and displays the model's accuracy on the test set.
+
+**Purpose:**  
+
+This app is designed for educational and exploratory purposes, helping users understand how logistic regression works, 
+
+how its parameters influence classification, and how decision boundaries change in response to different settings—all in an interactive, visual way.
+
+'''
+
+
 # Import necessary libraries
 import matplotlib.pyplot as plt
 import streamlit as st
